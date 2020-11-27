@@ -39,13 +39,14 @@
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(214, 21);
             this.categoryComboBox.TabIndex = 0;
+            this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // filmsListView
             // 
             this.filmsListView.HideSelection = false;
             this.filmsListView.Location = new System.Drawing.Point(12, 80);
             this.filmsListView.Name = "filmsListView";
-            this.filmsListView.Size = new System.Drawing.Size(434, 399);
+            this.filmsListView.Size = new System.Drawing.Size(776, 551);
             this.filmsListView.TabIndex = 1;
             this.filmsListView.UseCompatibleStateImageBehavior = false;
             this.filmsListView.View = System.Windows.Forms.View.List;
@@ -54,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 491);
+            this.ClientSize = new System.Drawing.Size(806, 643);
             this.Controls.Add(this.filmsListView);
             this.Controls.Add(this.categoryComboBox);
             this.Name = "MainForm1";
